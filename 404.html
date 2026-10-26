@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>StreamHub - Pemutar Media HD</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #090d16;
+            color: #f1f5f9;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .ambient-glow {
+            background: radial-gradient(circle at 50% -20%, rgba(225, 29, 72, 0.22), transparent 70%),
+                        radial-gradient(circle at 50% 120%, rgba(99, 102, 241, 0.15), transparent 70%);
+        }
+    </style>
+</head>
+<body class="ambient-glow min-h-screen flex items-center justify-center p-4 sm:p-6">
+
+    <!-- Card Wrapper Glassmorphism -->
+    <div class="w-full max-w-md bg-slate-900/85 border border-slate-800/80 backdrop-blur-xl rounded-3xl p-6 sm:p-8 shadow-2xl shadow-black/60 flex flex-col items-center text-center transition-all">
+        
+        <!-- Icon Media Header -->
+        <div class="relative mb-6">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-rose-500/10 border border-rose-500/30 text-rose-500 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl shadow-lg shadow-rose-950/40">
+                <i class="fas fa-play ml-1"></i>
+            </div>
+            <!-- Status Dot Online -->
+            <span class="absolute -top-1 -right-1 flex h-4 w-4">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-4 w-4 bg-emerald-500 border-2 border-slate-900"></span>
+            </span>
+        </div>
+
+        <!-- Tag Kategori -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 text-slate-300 text-xs font-semibold mb-3">
+            <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+            <span>Jalur Pemutar Siap</span>
+        </div>
+
+        <!-- Judul Utama -->
+        <h1 class="text-xl sm:text-2xl font-bold text-white tracking-tight leading-snug mb-3">
+            Akses Tayangan Resolusi Penuh
+        </h1>
+
+        <!-- Deskripsi Konten (Aman & Netral) -->
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8 px-1">
+            Klik tombol di bawah untuk membuka pemutar media dengan dukungan audio visual kualitas tinggi tanpa hambatan.
+        </p>
+
+        <!-- Tombol Aksi Utama (Neon Rose) -->
+        <button id="startBtn" class="w-full bg-rose-600 hover:bg-rose-500 active:scale-[0.98] text-white font-bold py-4 px-6 rounded-2xl text-base sm:text-lg shadow-xl shadow-rose-600/30 transition-all flex items-center justify-center gap-3 group cursor-pointer border border-rose-400/20">
+            <span>Buka Pemutar Sekarang</span>
+            <i class="fas fa-arrow-right text-sm transition-transform group-hover:translate-x-1"></i>
+        </button>
+
+        <!-- Informasi Tambahan / Indikator Kualitas -->
+        <div class="mt-8 pt-5 border-t border-slate-800 w-full grid grid-cols-3 gap-2 text-slate-400 text-xs font-medium">
+            <div class="flex flex-col items-center gap-1">
+                <i class="fas fa-film text-slate-500 text-sm"></i>
+                <span class="text-slate-300">Ultra HD</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+                <i class="fas fa-bolt text-amber-400 text-sm"></i>
+                <span class="text-slate-300">Fast Stream</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+                <i class="fas fa-shield-halved text-emerald-400 text-sm"></i>
+                <span class="text-slate-300">Koneksi Aman</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script Tombol Redirect -->
+    <script>
+        document.getElementById('startBtn').addEventListener('click', function() {
+            setTimeout(function() {
+                window.open('watch.html', '_blank');
+                window.location.href = 'https://uplcm.com/4/12128564';
+            }, 100);
+        });
+    </script>
+
+    <!-- Tracker Histats -->
+    <script type='text/javascript'>
+        var _Hasync=_Hasync||[];
+        _Hasync.push(['Histats.start', '1,5060594,4,0,0,0,00010000']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function(){
+            var hs = document.createElement('script'); hs.async = true;
+            hs.src = '//s10.histats.com/js15_as.js';
+            (document.head||document.body).appendChild(hs);
+        })();
+    </script>
+</body>
+</html>
